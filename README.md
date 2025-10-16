@@ -65,7 +65,7 @@ cd C:\Users\<yourname>\Documents\MobileDev
 ### Step 2 — Copy this command and paste it into your terminal:
 
 ```bash
-git clone https://github.com/niknuralia/campusfind.git
+git clone https://github.com/nikaliamohdsaufi/campusfind.git
 ```
 
 ✅ This will download the entire project from GitHub into a new folder called `campusfind`.
@@ -177,7 +177,7 @@ You can see it by visiting the repo online.
 After pushing your branch:
 
 1. Go to the GitHub repository page:
-   👉 [https://github.com/niknuralia/campusfind](https://github.com/niknuralia/campusfind)
+   👉 [https://github.com/nikaliamohdsaufi/campusfind]
 2. You’ll see a message like
    **“Compare & Pull Request”** — click it.
 3. Add a short title (e.g. “Added Home Page Feature”)

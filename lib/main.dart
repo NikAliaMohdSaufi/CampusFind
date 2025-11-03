@@ -4,7 +4,14 @@ import 'screens/welcome_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  
+  try {
+    await Firebase.initializeApp();
+    print("Firebase initialized successfully!");
+  } catch (e) {
+    print("Firebase initialization error: $e");
+  }
+  
   runApp(const MyApp());
 }
 
@@ -18,7 +25,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: const Color(0xFFFFF8E7), // Light cream color
+        scaffoldBackgroundColor: const Color(0xFFFFF8E7),
       ),
       home: const WelcomeScreen(),
     );

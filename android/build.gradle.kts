@@ -22,3 +22,15 @@ subprojects {
 tasks.register<Delete>("clean") {
     delete(rootProject.layout.buildDirectory)
 }
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath("com.android.tools.build:gradle:7.3.0")  // Note the parentheses and quotes
+        classpath("com.google.gms:google-services:4.4.4")   // Add this line
+    }
+}
